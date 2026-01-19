@@ -25,7 +25,7 @@
 
 let
   pname = "sparrow";
-  version = "2.2.3";
+  version = "2.3.1";
 
   openjdk = zulu25.override { enableJavaFX = true; };
 
@@ -41,8 +41,8 @@ let
     url = "https://github.com/sparrowwallet/${pname}/releases/download/${version}/sparrowwallet-${version}-${sparrowArch}.tar.gz";
     hash =
       {
-        x86_64-linux = "sha256-MsERgfJGpxRkQm4Ww30Tc95kThjlgI+nO4bq2zNGdeU=";
-        aarch64-linux = "sha256-31x4Ck/+Fa6CvBb6o9ncVH99Zeh0DUVv/hqVN31ysHk=";
+        x86_64-linux = "sha256-AcGjSLxjv9IWs4WIuAq/6R8K6cq750wod9y9qhbBUkI=";
+        aarch64-linux = "sha256-5bVfkbGDlWGFJeRHmDOy8YD45Iex+NmWh9Uoequ6AxI=";
       }
       ."${stdenvNoCC.hostPlatform.system}";
 
