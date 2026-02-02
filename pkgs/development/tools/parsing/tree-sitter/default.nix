@@ -103,7 +103,7 @@ let
 in
 rustPlatform.buildRustPackage (final: {
   pname = "tree-sitter";
-  version = "0.25.10";
+  version = "0.26.10";
 
   src = fetchFromGitHub {
     owner = "tree-sitter";
